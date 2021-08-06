@@ -1,7 +1,7 @@
 dartResult = "1S2D*3T"
 answer = 0
 def solution(dartResult):
-    dartResult += ' ' # index error 방지를 위해 삽입, 애초에 접근 자체가 안된다.
+    dartResult += ' ' # index error 방지를 위해 삽입, 애초에 접근 자체가 안된다. 
     answer = 0
     before = 0
     score = 0
