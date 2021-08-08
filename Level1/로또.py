@@ -1,4 +1,4 @@
-def solution(lottos, win_nums):
+def solution(lottos, win_nums): #좀더 간단하게 풀어보기
     answer = []
     lottos.sort()
     win_nums.sort()
