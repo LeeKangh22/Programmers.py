@@ -6,7 +6,7 @@ using namespace std;
 
 bool isPrime(int sum) { 
 	for (int i = 2; i = sqrt(sum); i++) {
-		if ((sum % i)) == 0)
+		if ((sum % i) == 0)
 			return false;
 	}
 	return true;
