@@ -1,5 +1,5 @@
 
-def solution(n, arr1, arr2):
+def solution(n, arr1, arr2): #다시 풀어보기
     answer = []
     
     for i in range(0, len(arr1)):
