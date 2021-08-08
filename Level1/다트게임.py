@@ -1,4 +1,4 @@
-dartResult = "1S2D*3T"
+dartResult = "1S2D*3T" #nedd resolving
 answer = 0
 def solution(dartResult):
     dartResult += ' ' # index error 방지를 위해 삽입, 애초에 접근 자체가 안된다. 
