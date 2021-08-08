@@ -10,6 +10,7 @@ def three(n, str):
     while pow(3, i) >= n:
         i += 1
     str += ? # 해결중
+    #해결 못함. 답지 봐야할듯
     return n % pow(3, i)
 
 def solution(n):
