@@ -10,5 +10,4 @@ def solution(n):
         temp[i] = str(temp[i])
         string2 += temp[i]
     answer = int(string2)
-        
     return answer
