@@ -1,12 +1,6 @@
 def solution(numbers):
-    answer = ''
-    start = 0
-    sum = ''
-    temp = []
-    for i in range(0, len(numbers)):
-        start = numbers[i]
-        for j in range(0, len(numbers)):
-            if j == i:
-                pass
-            
-    return answer
+    numbers = list(map(str, numbers))
+    numbers.sort(key=lambda x: x * 3, reverse=True)
+    return str(int(''.join(numbers)))
+
+# 코드 이해하기
