@@ -1,5 +1,5 @@
 phone_book = ["119", "97674223", "1195524421"]
-def solution(phone_book):
+def solution(phone_book): #다시 풀어보기
     answer = True
     phone_book.sort()
     temp_str = []
