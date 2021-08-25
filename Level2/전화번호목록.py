@@ -18,6 +18,7 @@ def solution(phone_book): #다시 풀어보기
                     answer = False
                     break
     '''
+    
     for i in range(0, len(phone_book)):
         temp_str.append(phone_book[i][:temp1])
     for i in range(0, len(temp_str)):
