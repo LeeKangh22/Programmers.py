@@ -1,6 +1,3 @@
-table = ["SI JAVA JAVASCRIPT SQL PYTHON C#", "CONTENTS JAVASCRIPT JAVA PYTHON SQL C++", "HARDWARE C C++ PYTHON JAVA JAVASCRIPT", "PORTAL JAVA JAVASCRIPT PYTHON KOTLIN PHP", "GAME C++ C# JAVASCRIPT C JAVA"]
-languages = ["PYTHON", "C++", "SQL"]
-preference = [7, 5, 5]
 def solution(table, languages, preference):
     answer = ''
     temp = [] #각 직업군 별 언어를 공백 기준으로 스플릿 하여 넣어놓을 값
@@ -40,4 +37,3 @@ def solution(table, languages, preference):
     answer = lan_temp[0]
             
     return answer
-print(solution(table,languages,preference))
