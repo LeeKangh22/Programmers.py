@@ -1,7 +1,3 @@
-left = 13
-right = 17
-
-# 약수 구하는 방법 잘 알아두고 두고두고 써먹자
 def hi(n):
     temp = 0
     for i in range(1, n + 1):
@@ -19,5 +15,3 @@ def solution(left, right):
             answer -= i
         
     return answer
-
-print(solution(left,right))
