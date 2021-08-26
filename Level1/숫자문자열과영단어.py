@@ -1,5 +1,3 @@
-s = 'one4seveneight'
-
 def solution(s):
     answer = 0
     while True:
@@ -17,4 +15,3 @@ def solution(s):
     answer = int(s)  
     return answer 
     
-print(solution(s))
