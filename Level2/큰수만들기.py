@@ -1,7 +1,7 @@
 import random
 
 number = "1924"
-
+#solving, 푸는 중
 
 def bigger(a, b):
     if a > b:
@@ -12,7 +12,7 @@ def bigger(a, b):
 def solution(number, k):
     answer = ''
     temp = []
-    for i in range(0, len(number)):
+    for i in range(0, len(number))
         temp.append(int(number[i]))
     count = 0
     while len(temp) > len(temp) - k:
