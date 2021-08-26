@@ -1,5 +1,3 @@
-scores = [[100,50,50],[50,100,50],[50,50,100]]
-
 def solution(scores):
     point = [[0 for col in range(len(scores))] for row in range(len(scores))] # 2차원 배열 생성 잘 알아두기. 여기서 문제가 발생했었음.
     for i in range(0, len(scores)): # 다른 2차원 배열에 넣는 것 말고 다른 방법 생각해보기.
@@ -54,4 +52,3 @@ def solution(scores):
         elif 50 > avg:
             answer += 'F'
     return answer
-print(solution(scores))
