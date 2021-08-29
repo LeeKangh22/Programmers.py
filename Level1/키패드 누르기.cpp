@@ -2,7 +2,7 @@
 #include <vector>
 
 using namespace std;
-
+//python으로 풀어보기
 int getDistance(int src, int dst) {
     int sum = 0;
     int s = src, d = dst;
