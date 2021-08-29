@@ -7,12 +7,14 @@ def solution(n, arr1, arr2):
         for j in range(0, n - (len(arr1[i]) - 2)):
             string = string + '0'
         arr1[i] = string + arr1[i][2:]
+
     for i in range(0, len(arr2)):
         string = ''
         arr2[i] = bin(arr2[i])
         for j in range(0, n - (len(arr2[i]) - 2)):
             string = string + '0'
         arr2[i] = string + arr2[i][2:]
+
     for i in range(0, n):
         string = ''
         for j in range(0, n):
@@ -21,4 +23,5 @@ def solution(n, arr1, arr2):
             else:
                 string += '#'
         answer.append(string)
+    
     return answer
