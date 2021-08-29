@@ -1,6 +1,6 @@
 def solution(n, arr1, arr2): 
     answer = []
-    
+    #kakao 2017 blind test
     for i in range(0, len(arr1)):
         string = ''
         arr1[i] = bin(arr1[i])
