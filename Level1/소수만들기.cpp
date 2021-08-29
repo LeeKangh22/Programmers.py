@@ -11,7 +11,7 @@ bool isPrime(int sum) {
 	}
 	return true;
 }
-
+// python으로 풀어보기
 int solution(vector<int> nums) {
 
 	int answer = 0;
