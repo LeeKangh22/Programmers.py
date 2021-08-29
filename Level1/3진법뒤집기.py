@@ -9,7 +9,7 @@ def three(n, str):
     i = 0
     while pow(3, i) >= n:
         i += 1
-    str += ? # 해결중
+    str += ???abs 
     #해결 못함. 답지 봐야할듯
     return n % pow(3, i)
 
