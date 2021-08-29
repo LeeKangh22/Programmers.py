@@ -14,4 +14,5 @@ def solution(s):
         break
     answer = int(s)  
     return answer 
+    #좀더 간단한 방법 없을까
     
