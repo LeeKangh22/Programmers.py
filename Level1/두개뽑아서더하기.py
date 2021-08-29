@@ -9,6 +9,7 @@ def solution(numbers):
     for i in range(0, len(temp)):
         if temp[i] not in new_array:
             new_array.append(temp[i])
+
     new_array.sort()
     answer = new_array
     return answer
