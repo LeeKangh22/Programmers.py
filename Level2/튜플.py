@@ -11,6 +11,10 @@ def solution(s):
     temp = []
     for i in range(0, len(s)):
         temp.append(s[i])
+    
+    temp.split("{")
+    temp.split("}")
+    
     my_set = set(temp)
     temp = list(my_set)
     print(temp) 
