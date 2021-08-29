@@ -4,4 +4,4 @@ def solution(s):
         return True
     else:
         return False
-    return answer
+   
