@@ -3,22 +3,18 @@ import random
 number = "1924"
 #solving, 푸는 중
 
-def bigger(a, b):
-    if a > b:
-        return a
-    else:
-        return b
+'''
+앞에서부터 k개씩 검사한다. 여기서 가장 작은걸 뺀다.
+이걸 k번 하면 큰 수가 만들어진다. 만약 가장 작은수가 맨 앞에 있으면 맨앞에 것을 뺀다.
+'''
 
 def solution(number, k):
     answer = ''
     temp = []
-    for i in range(0, len(number))
-        temp.append(int(number[i]))
-    count = 0
-    while len(temp) > len(temp) - k:
-        temp = bigger(temp.remove(random.choice(temp)),temp.remove(random.choice(temp)))
-    print(temp)
-
+    num = ''
+    
+    for i in number:
+        for j in range(0, )
             
 
     return answer
