@@ -1,23 +1,41 @@
-s = "{{2},{2,1},{2,1,3},{2,1,3,4}}"
+s = "{{4,2,3},{3},{2,3,4,1},{2,3}}"
 '''
 ,로 튜플로 나눈 다음에 괄호 싹다 없애기?
 아니면 가장 긴 길이의 퓨틀 본 다음에 그걸로 답 내기?
 방법 생각좀
 
 '''
+'''
+맨 앞 {{와 }}를 잘라준다.
+이 후 },{ 를 기준으로 split을 해준다.
+매 반복문을 돌면서 원소가 없으면 넣어준다. 근데 여기서 ii가 뭔지를 모르겠다. -> i로 출력하면 그냥 숫자가, ii로 출력하면 리스트가 되어서 나온다. 찾아봐야겠다.
+i 출력시 
+3
+2,3
+4,2,3
+2,3,4,1
+
+ii 출력시
+['3']
+['2', '3']
+['4', '2', '3']
+['2', '3', '4', '1']
+
+답을 구하는 방법은 알 것 같다. 길이가 가장 작은 원소부터 넣어주고 다음 집합에서 없는 것을 먼저 넣어주고 넣은 다음 또 없는 걸 넣어주고 하는 방식이다. 그러니 집합의 순서가 달라져도 상관이 없다.
+ii가 뭔지만 알면 될 것 같다.
+'''
 
 def solution(s):
     answer = []
-    temp = []
-    for i in range(0, len(s)):
-        temp.append(s[i])
-    
-    temp.split("{")
-    temp.split("}")
-    
-    my_set = set(temp)
-    temp = list(my_set)
-    print(temp) 
-    return answer
+    s = s[2:-2]
+    s = s.split("},{")
+    s.sort(key = len)
+    for i in s:
+        ii = i.split(',')
+        #print(i)
+        for j in ii:
+            if int(j) not in answer:
+                answer.append(int(j))
+    print(answer)
 
 solution(s)
