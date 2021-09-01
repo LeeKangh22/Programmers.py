@@ -7,7 +7,7 @@ def solution(answers):
     student2 = 0
     student3 = 0
 
-    # 수포자 1
+    # 수포자 1 
     correct = 1
     for i in range(0, len(answers)):
         if correct > 5:
