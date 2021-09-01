@@ -1,4 +1,3 @@
-s = 'Zbcdefg'
 def solution(s):
     answer = ''
     temp = []
@@ -9,4 +8,3 @@ def solution(s):
     for i in range(0, len(temp)):
         answer += temp[i]
     return answer
-print(solution(s))
