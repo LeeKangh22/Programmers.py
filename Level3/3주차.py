@@ -5,5 +5,5 @@ def solution(game_board, table):
     arr1 = []
 
     for i in range(0, len(game_board)):
-        pass #temp function2
+        pass #t
     return answer
