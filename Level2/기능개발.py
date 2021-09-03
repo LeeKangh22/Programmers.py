@@ -1,6 +1,3 @@
-progresses = [95, 90, 99, 99, 80, 99]
-speeds = [1, 1, 1, 1, 1, 1]
-
 def solution(progresses, speeds):
     answer = []
     count_stack = []
@@ -24,4 +21,3 @@ def solution(progresses, speeds):
     answer.append(count)        
             
     return answer
-print(solution(progresses, speeds))
