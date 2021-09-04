@@ -2,6 +2,7 @@
 #include <vector>
 
 using namespace std;
+
 int getDistance(int src, int dst) {
     int sum = 0;
     int s = src, d = dst;
