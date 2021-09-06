@@ -1,26 +1,27 @@
-s = 'gbacabbbaagtggtc'
-#답은 잘 나옴. 시간초과로 실패가 뜸
-def remove_(s):
-    a = s
-    for i in range(0, len(s) - 1):
-            temp = s[i]
-            if s[i + 1] is temp:
-                a = s.replace(temp + temp,'')
-    return a
+s = 'baabaa'
 
 def solution(s):
-    if len(s) % 2 == 1:
+    temp = []
+    if len(s) == 1:
         return 0
+    elif len(s) == 0:
+        return 1
     else:
-        a = s
-        count = 0
-        while count == 0:
-            a = remove_(a)
-            if len(a) == len(remove_(a)):
-                count += 1
-            if len(a) == 0:
-                return 1
-            elif count == 1:
-                return 0
-    return 0
+        temp.append(s[0])
+        temp.append(s[1])
+        if len(temp) >=2 and temp[-1] == temp[-2]:
+                temp.pop()
+                temp.pop()
+        for i in range(2, len(s)):
+            temp.append(s[i])
+            if len(temp) >=2 and temp[-1] == temp[-2]:
+                temp.pop()
+                temp.pop()
+            elif len(temp) < 2:
+                continue
+    if not temp:
+        return 1
+    else:
+        return 0
+    
 print(solution(s))
