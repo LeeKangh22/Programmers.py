@@ -10,11 +10,11 @@ def solution(citations):
         print(citations)
         h = citations[i]
         count = len(citations)
-        if count < h:
-            break
-        else:
+        if count >= h:
             h_temp.append(h)
             citations.pop(0)
+        else:
+            break
     answer = max(h_temp)
     
     return answer
