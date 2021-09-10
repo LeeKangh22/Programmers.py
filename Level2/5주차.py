@@ -11,5 +11,6 @@ def solution(word):
         str.append("".join(n[i])) #해당 리스트로 존재하는 문자들을 모두 문자열로 조합
     answer = str.index(word) + 1 #인덱스 + 1 반환
     
+    
     return answer
 print(solution(word))
