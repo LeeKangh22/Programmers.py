@@ -21,7 +21,6 @@ def solution(table, languages, preference):
     for i in range(1, len(pref)):
         if max <= pref[i]:
             max = pref[i]
-    
     # 점수가 가장 큰 직업을 다 넣어놓고 사전순으로 정렬하여 가장 처음에 위치한 직업을 출력한다.
     if pref[0] == max:
         lan_temp.append('SI')
