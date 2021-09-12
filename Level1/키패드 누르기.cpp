@@ -13,9 +13,10 @@ int getDistance(int src, int dst) {
     if (s > d + 1) {
         while (s > d + 1) {
             sum++;
-            s -= 3;
+            s -= 3;  
         }
     }
+    
     else if (d - 1 > s) {
         while (d - 1 > s) {
             sum++;
