@@ -26,7 +26,6 @@ int getDistance(int src, int dst) {
     sum += abs(s - d);
     return sum;
 }
-
 string solution(vector<int> numbers, string hand) {
     string answer = "";
     int position_l = 10;
