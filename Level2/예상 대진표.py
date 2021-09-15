@@ -14,6 +14,7 @@ def solution(n,a,b):
                 else:
                     b = b / 2
             answer += 1
+            
     else: 
         while True:
             if a % 2 == 0 and a - b == 1:
