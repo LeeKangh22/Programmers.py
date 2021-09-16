@@ -1,5 +1,6 @@
 def solution(n,a,b):
     answer = 1  
+    
     if b > a:
         while True:
             if b % 2 == 0 and b - a == 1:
