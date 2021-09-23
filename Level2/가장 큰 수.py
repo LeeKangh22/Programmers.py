@@ -3,3 +3,5 @@ def solution(numbers):
     numbers.sort(key=lambda x: x * 3, reverse=True)
     return str(int(''.join(numbers)))
 # 코드 이해하기
+
+
