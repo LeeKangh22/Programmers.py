@@ -1,5 +1,3 @@
-arr = [2,6,8,14]
-
 def solution(arr):
     answer = 0
     lcm = 1
@@ -10,5 +8,3 @@ def solution(arr):
                 break
         answer = lcm
     return answer
-    
-print(solution(arr))
