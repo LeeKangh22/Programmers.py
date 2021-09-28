@@ -1,41 +1,56 @@
-s = "}}}"
+s = "}]()[{"
 def solution(s):
     answer = 0
-    switch1 = 0
-    switch2 = 0
-    if '(' in s:
-        switch1 += 1
-    if '{' in s:
-        switch1 += 1
-    if '[' in s:
-        switch1 += 1
+    temp = []
     for j in range(0, len(s)):
-        if s[j] == '(':
-            if ')' in s[j:]:
-                switch2 += 1
-        if s[j] == '{':
-            if '}' in s[j:]:
-                switch2 += 1
-        if s[j] == '[':
-            if ']' in s[j:]:
-                switch2 += 1
-    if switch1 == switch2:
-        answer += 1       
+        temp.append(s[j])
+    for j in temp:
+        if j == '(':
+            for k in range(temp.index(j), len(s)):
+                if temp[k] == ')':
+                    temp.pop(temp.index(j))
+                    temp.pop(k)
+                    break
+        elif j == '{':
+            for k in range(temp.index(j), len(s)):
+                if temp[k] == '}':
+                    temp.pop(temp.index(j))
+                    temp.pop(k)
+                    break   
+        elif j == '[':
+            for k in range(temp.index(j), len(s)):
+                if temp[k] == ']':
+                    temp.pop(temp.index(j))
+                    temp.pop(k)
+                    break
+    if len(temp) == 0:
+        answer += 1
     for i in range(1, len(s)):
+        temp = []
         s += s[0]
         s = s[1:]
-        switch2 = 0
         for j in range(0, len(s)):
-            if s[j] == '(':
-                if ')' in s[j:]:
-                    switch2 += 1
-            if s[j] == '{':
-                if '}' in s[j:]:
-                    switch2 += 1
-            if s[j] == '[':
-                if ']' in s[j:]:
-                    switch2 += 1
-        if switch1 == switch2:
-            answer += 1       
+            temp.append(s[j])
+        for j in temp:
+            if j == '(':
+                for k in range(temp.index(j), len(s)):
+                    if temp[k] == ')':
+                        temp.pop(temp.index(j))
+                        temp.pop(k)
+                        break
+            elif j == '{':
+                for k in range(temp.index(j), len(s)):
+                    if temp[k] == '}':
+                        temp.pop(temp.index(j))
+                        temp.pop(k)
+                        break   
+            elif j == '[':
+                for k in range(temp.index(j), len(s)):
+                    if temp[k] == ']':
+                        temp.pop(temp.index(j))
+                        temp.pop(k)
+                        break
+        if len(temp) == 0:
+            answer += 1
     return answer
 print(solution(s))
