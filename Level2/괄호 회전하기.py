@@ -7,18 +7,9 @@ def solution(s):
         s = s[1:]
         for j in range(0, len(s)):
             temp.append(s[j])
-            if len(temp) >= 2 and temp[-2] == '[':
-                if temp[-1] == ']':
-                    temp.pop()
-                    temp.pop()
-            if len(temp) >= 2 and temp[-2] == '{':
-                if temp[-1] == '}':
-                    temp.pop()
-                    temp.pop()
-            if len(temp) >= 2 and temp[-2] == '(':
-                if temp[-1] == ')':
-                    temp.pop()
-                    temp.pop()
+            if len(temp) >= 2 and ((temp[-2] == '[' and temp[-1] == ']') or (temp[-2] == '(' and temp[-1] == ')') or (temp[-2] == '{' and temp[-1] == '}')):
+                temp.pop()
+                temp.pop()
         if len(temp) == 0:
             answer += 1
             temp = []
