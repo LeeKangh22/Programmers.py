@@ -1,5 +1,6 @@
 from itertools import *
 word = "AAAAE"
+
 def solution(word):
     answer = 0
     n = []
