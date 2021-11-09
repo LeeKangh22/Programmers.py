@@ -14,6 +14,7 @@ def solution(n):
     return answer + 1
 #시간 초과 코드
 '''
+
 def solution(n):
     answer = 0
     for i in range(1, n + 1):
