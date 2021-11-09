@@ -1,5 +1,6 @@
 land = [[1,2,3,5],[5,6,7,8],[4,3,2,1]]
 def solution(land):
+    
     answer = 0
     n = land[0].index(max(land[0]))
     answer += max(land[0])
