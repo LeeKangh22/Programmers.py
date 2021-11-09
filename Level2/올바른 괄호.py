@@ -1,4 +1,5 @@
 def solution(s):
+    
     temp = []
     if len(s) == 1 or len(s) == 0:
         return False
