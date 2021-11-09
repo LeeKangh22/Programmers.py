@@ -1,4 +1,3 @@
-s = "}}}"
 def solution(s):
     answer = 0
     temp = []
