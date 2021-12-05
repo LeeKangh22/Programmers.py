@@ -10,6 +10,7 @@ def gradientDescent(X, y, w, alpha, m, numIterations):
         w = w - alpha * gradient
     return w
 
+
 def genData(numPoints, bias, variance):
     X = np.zeros(shape = (9, 4))
     y = np.zeros(shape = 9)
